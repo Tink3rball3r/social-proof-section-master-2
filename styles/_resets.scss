@@ -1,0 +1,12 @@
+// resets
+html {
+	font-size: 100%;
+	font-family: 'Spartan', sans-serif;
+}
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
