@@ -1,3 +1,14 @@
+:root {
+  --clr-1: hsl(300, 43%, 22%);
+  --clr-2: hsl(333, 80%, 67%);
+  --clr-3: hsl(303, 10%, 53%);
+  --clr-4: hsl(300, 24%, 96%);
+  --clr-5: hsl(0, 0%, 100%);
+  --fw-1: 400;
+  --fw-2: 500;
+  --fw-3: 700;
+}
+
 html {
   font-size: 100%;
   font-family: 'Spartan', sans-serif;
@@ -10,5 +21,113 @@ html {
   margin: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body {
+  background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+
+.main {
+  margin-top: 4rem;
+  padding: 0 1.5rem;
+}
+
+.top_container {
+  margin-bottom: 4rem;
+}
+
+.heading {
+  margin-bottom: 3rem;
+}
+
+.heading_heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: var(--fw-3);
+  color: var(--clr-1);
+  margin-bottom: 2rem;
+}
+
+.heading_paragraph {
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--clr-3);
+  font-weight: var(--fw-2);
+}
+
+.ratings_box {
+  background-color: var(--clr-4);
+  padding: 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.ratings_box .ratings_stars {
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.ratings_box .ratings_text {
+  text-align: center;
+  color: var(--clr-1);
+  font-weight: var(--fw-3);
+}
+
+.ratings_box:nth-child(2) {
+  margin: 1.5rem 0;
+}
+
+.bottom_container {
+  margin-bottom: 3rem;
+}
+
+.reviews_box {
+  padding: 3rem 2rem;
+  background-color: var(--clr-1);
+  border-radius: 0.8rem;
+}
+
+.reviews_box .reviews_reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.reviews_box .reviews_reviewer > img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 2rem;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.reviews_box:nth-child(2) {
+  margin: 1.5rem 0;
+}
+
+.reviewer_title {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reviewer_name {
+  font-weight: var(--fw-3);
+  color: white;
+  padding-bottom: 0.3rem;
+}
+
+.reviewer_verified {
+  font-weight: var(--fw-1);
+  color: var(--clr-2);
+}
+
+.reviewer_paragraph {
+  line-height: 1.5rem;
+  font-weight: var(--fw-2);
+  color: var(--clr-5);
 }
 /*# sourceMappingURL=styles.css.map */
