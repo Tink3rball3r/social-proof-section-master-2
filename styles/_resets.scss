@@ -2,6 +2,8 @@
 html {
 	font-size: 100%;
 	font-family: 'Spartan', sans-serif;
+	box-sizing: border-box;
+	overflow-y: hidden;
 }
 *,
 *::before,

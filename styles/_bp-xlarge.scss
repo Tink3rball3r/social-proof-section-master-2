@@ -1,0 +1,55 @@
+@include bp-xlarge {
+	.top_container {
+		justify-content: space-between;
+		margin-bottom: 5rem;
+	}
+
+	.heading {
+		margin-bottom: 3rem;
+
+		&_heading {
+			font-size: 3.5rem;
+
+			margin-bottom: 3rem;
+		}
+
+		&_paragraph {
+			text-align: left;
+			line-height: 1.7rem;
+		}
+	}
+
+	.ratings_box {
+		justify-content: space-evenly;
+		width: 40rem;
+		padding: 1.5rem 0;
+		border-radius: 0.5rem;
+
+		.ratings_stars {
+			text-align: center;
+			margin-bottom: 0.6rem;
+		}
+
+		.ratings_stars > img {
+			width: 2rem;
+		}
+
+		.ratings_text {
+			align-self: center;
+		}
+	}
+
+	.reviews_box {
+		padding: 2rem 2rem 4rem 2rem;
+		width: 45rem;
+	}
+	.reviewer_name,
+	.reviewer_verified,
+	.reviewer_paragraph {
+		font-size: 1.3rem;
+	}
+
+	.reviewer_paragraph {
+		line-height: 1.8rem;
+	}
+}

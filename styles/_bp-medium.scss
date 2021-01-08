@@ -1,0 +1,137 @@
+@include bp-medium {
+	body {
+		background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+		background-repeat: no-repeat, no-repeat;
+		background-position: left top, right bottom;
+		background-color: var(--clr-5);
+	}
+
+	.main {
+		margin-top: 4rem;
+		padding: 0 1.5rem;
+		width: 80vw;
+		height: 100vh;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.top_container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 95%;
+		padding-top: 2rem;
+		margin-top: 0;
+	}
+
+	.heading {
+		flex-basis: 50%;
+		margin-bottom: 0;
+
+		&_heading {
+			text-align: left;
+			width: 60%;
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+
+		&_paragraph {
+			text-align: left;
+			line-height: 1.9rem;
+			font-size: 1.5rem;
+			width: 35rem;
+		}
+	}
+
+	.ratings {
+		flex-basis: auto;
+
+		.ratings_box {
+			display: flex;
+			align-self: center;
+			padding: 1rem 2rem 1.2rem 2rem;
+
+			.ratings_stars {
+				margin: 0 2rem 0 0;
+			}
+
+			.ratings_text {
+				font-size: 1rem;
+			}
+		}
+
+		.ratings_box:nth-child(2) {
+			transform: translate(2.5rem);
+		}
+
+		.ratings_box:nth-child(3) {
+			transform: translate(4.5rem);
+		}
+	}
+
+	.bottom_container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 5rem;
+	}
+
+	.reviews_box {
+		padding: 1.5rem 1rem;
+		width: 20rem;
+
+		.reviews_reviewer {
+			display: flex;
+			margin-bottom: 0.5rem;
+		}
+
+		.reviews_reviewer > img {
+			align-self: flex-start;
+			margin-right: 2rem;
+			border-radius: 50%;
+			width: 20%;
+		}
+	}
+	.reviews_box:nth-child(2) {
+		margin: 0 2rem 0 2rem;
+		transform: translateY(2rem);
+	}
+	.reviews_box:nth-child(3) {
+		transform: translateY(4rem);
+	}
+
+	.reviewer_title {
+		align-self: flex-end;
+		padding-top: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.reviewer_name {
+		font-size: 0.9rem;
+		font-weight: var(--fw-3);
+		color: white;
+		padding-bottom: 0.3rem;
+	}
+
+	.reviewer_verified {
+		font-size: 0.9rem;
+		font-weight: var(--fw-1);
+		color: var(--clr-2);
+	}
+
+	.reviewer_paragraph {
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+	}
+
+	.attribution {
+		display: block;
+		text-align: center;
+		border: 2px dotted var(--clr-1);
+		padding: 0.5rem 1rem;
+		position: absolute;
+		bottom: 2.5rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}

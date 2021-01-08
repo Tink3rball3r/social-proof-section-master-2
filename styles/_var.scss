@@ -12,3 +12,23 @@
 	--fw-2: 500;
 	--fw-3: 700;
 }
+
+// mixins
+
+@mixin bp-medium {
+	@media (min-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin bp-large {
+	@media (min-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin bp-xlarge {
+	@media (min-width: 2000px) {
+		@content;
+	}
+}

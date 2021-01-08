@@ -1,0 +1,15 @@
+@include bp-large {
+	.top_container {
+		justify-content: space-between;
+	}
+
+	.reviews_box {
+		padding: 2rem 2rem 3rem 2rem;
+		width: 35rem;
+	}
+}
+.reviewer_name,
+.reviewer_verified,
+.reviewer_paragraph {
+	font-size: 1rem;
+}
