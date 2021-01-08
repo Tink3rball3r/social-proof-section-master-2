@@ -14,7 +14,7 @@ html {
   font-family: 'Spartan', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 *,
@@ -30,6 +30,7 @@ body {
   background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
+  height: 100vh;
 }
 
 .main {
