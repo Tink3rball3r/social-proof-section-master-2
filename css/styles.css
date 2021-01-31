@@ -140,6 +140,21 @@ body {
   display: none;
 }
 
+@media (max-width: 800px) {
+  .bottom_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (min-width: 1400px) {
   body {
     background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
